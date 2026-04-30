@@ -44,19 +44,20 @@ header{
   box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
+
 .logo{
   display:flex;
   align-items:center;
-  gap:12px;
-  font-family:'Ubuntu', sans-serif;
-  font-weight:700;
-  font-size:0.95rem;
-  letter-spacing:.02em;
-  color:var(--primary);
 }
 
 .logo img{
-  height:45px;
+  height:68px;
+  width:auto;
+  transition:.3s;
+}
+
+.logo img:hover{
+  transform:scale(1.04);
 }
 
 nav a{
@@ -526,8 +527,7 @@ footer{
 <!-- ── HEADER ── -->
 <header>
   <div class="logo">
-    <img src="mascota.png" alt="Logo Fundación Adáptate">
-    <span>Fundación Adáptate</span>
+    <img src="logo.png" alt="Logo Fundación Adáptate">
   </div>
 
  <nav>
