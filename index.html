@@ -88,6 +88,51 @@ nav a:hover{
   color:white !important;
   transform:translateY(-2px);
 }
+
+  .menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  font-size:32px;
+  color:var(--primary);
+  cursor:pointer;
+}
+
+/* SOLO CELULAR */
+@media(max-width:980px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:78px;
+    right:8%;
+    background:white;
+    padding:18px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    flex-direction:column;
+    min-width:220px;
+    gap:12px;
+  }
+
+  nav.show{
+    display:flex;
+  }
+
+  nav a{
+    margin:0;
+    padding:10px 0;
+  }
+
+  .btn-donar{
+    margin:8px 0 0 0;
+    text-align:center;
+  }
+}
 /* ── HERO ── */
 .hero{
   min-height:100vh;
